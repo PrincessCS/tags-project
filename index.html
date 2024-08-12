@@ -1,0 +1,196 @@
+<!--defines or declares the html version-->
+<!DOCTYPE html>
+<!--root element of the HTML document-->
+<html lang="en">
+    <!--contains meta info the HTML document-->
+<head>
+
+    <!--meta data for the document-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--links to an external resource (Google Fonts)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--link to a css stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--the title of the HTML document-->
+    <title>Tags Assignment</title>
+</head>
+
+<!--the main content of the document-->
+<body>
+
+    <!--introductory section of the document which contains the navigation links-->
+    <header>
+        <!--division tag for grouping elements-->
+        <div class="nav-container">
+            <div id="logo-div">
+                <img src="images/DF official logo.svg" alt="logo-img">
+            </div>
+
+            <div id="nav-links">
+
+                <!--defines the navigation menu in the header-->
+                <nav>
+                    <!--defines hyperlinks in the navigation menu-->
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#projects">Projects</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <!--a clickable button-->
+                <button type="button">Start a Project</button>
+               </nav>
+            </div>
+           
+        </div>
+       
+    </header>
+    
+    <!--main info about the document-->
+    <main>
+
+        <!--a stand alone section of the home section-->
+        <section id="home">
+            <div class="home-container">
+
+                <div class="background">
+                    <!--embeds an image of the home section background image-->
+                    <img src="images/Group 11.png" alt="backgound-img">
+
+                    <div class="background-overlay">
+                        <!--header for the home section-->
+                        <h1>We are DF Consults <!--for breaks--><br><!--an inline container for a separate inline content-->
+                            <span>/DF kuhn°suhlts/</span></h1>
+                            <!--defines a paragraph element-->
+                        <p>We are passionate about building inspiring <br> innovations and digital solutions</p>
+                    </div>
+
+                </div>
+               
+            </div>
+
+        </section>
+        <!--another stand alone section-->
+        <section id="about">
+            <div class="about-container">
+                <div>
+                    <h2>About Us</h2>
+                    <!--a horizontal line-->
+                    <hr>
+                </div>
+             
+                <p>We are DF Consults a digital design & development agency with <br>
+                     a vision to collaboate and empower young minds to build the <br>
+                      future through design. </p>
+                      
+                     <p>Our team comprises of thinkers, problem solvers, developers, <br>
+                         designers, digital marketers and data analysts. Our numbeer <br>
+                          might not be of high volume but our capacity sure does. </p>
+                          
+                          <p>We intentionally maintained a small team of young of <br>
+                             professionals who are enthusiastic, vibrant and dynamic. We <br>
+                             work together with dedication to master the biggest challenges. </p>
+
+                             <button type="button">Learn More</button>
+            </div>
+        </section>
+
+            <section id="gallery">
+                <div class="gallery-container">
+                    <img src="images/gallery-section.png" alt="gallery">
+                    <p>We are a group of thinkers, problem-solvers, developers, designers, <br>
+                         digital marketers and data analysts. Our number might not be of <br>
+                         high volume but our capacity sure does. You can learn more <a href="#about">about <br>us,</a>
+                          check the latest on <a href="#" target="_blank">Instagram</a> and <a href="#" target="_blank">Linkedin</a> or apply to <a href="#contact">join our team.</a>
+                        
+                    </p>
+
+                    <button type="button">Download Our Brochure</button>
+                </div>
+
+            </section>
+
+            <section id="projects">
+                <div class="project-container">
+                    <h3>Start a Project</h3>
+                    <hr>
+                    <!--an HTML form for user input-->
+                    <form action="" class="project-form">
+                        <!--label for the input element-->
+                        <label for="project-name">
+                            <!--input element for inputing user input-->
+                            <input type="text" id="project-name" placeholder="Project Name">
+                        </label>
+                        <!--a dropdown list-->
+                        <select name="category" id="category-dropdown">
+                            <!--options in the dropdown list-->
+                            <option value="1">Category </option>
+                            <option value="2">Category 2</option>
+                            <option value="3">Category 3</option>
+                            <option value="4">Category 4</option>
+                        </select>
+                        
+                        <label for="email">
+                            <input type="email" id="email" placeholder="Email">
+                        </label>
+
+                        <label for="name">
+                            <input type="text" id="name" placeholder="Client Name">
+                        </label>
+
+                        <label for="phone-number">
+                            <input type="tel" id="phone-number" placeholder="Phone">
+                        </label>
+                        <!--for multiline text input-->
+                        <textarea name="notes" id="notes" rows="10" cols="50" placeholder="Notes"></textarea>
+
+                    </form>
+                    <button type="submit">Share</button>
+                </div>
+
+            </section>
+
+            <section id="contact">
+                <div class="contact-container">
+                    <h4>Get In Touch</h4>
+                    <hr>
+
+                    <img src="images/DF official logo.svg" id="logo" alt="logo-img">
+
+                    <p>To find out how we can help you. If it's easier <br>
+                    you can email us</p>
+
+                    <form action="">
+                        <input type="email" placeholder="Email Address">
+                        <button type="submit">Submit</button>
+                    </form>
+
+                    <div class="socials">
+                        <img src="images/Vector.png" class="social-icons" alt="Linkedin">
+                        <img src="images/Group 14.png" class="social-icons" alt="Instagram">
+                        <img src="images/Vector (1).png" class="social-icons" alt="Facebook">
+                    </div>
+ 
+                </div>
+            </section>
+        
+    </main>
+    <!--footer content of the document-->
+    <footer>
+        <p>2024. This is just a clone. No Rights</p>
+    </footer> 
+    
+</body>
+</html>
